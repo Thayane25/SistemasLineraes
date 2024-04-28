@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\Sistema3x3.css">
+    
+    <title>Classificação de sistemas lineares</title>
+
+</head>
+<body>
+    <div class="main">
+        <h1 class="title">Classificação de sistemas lineares</h1>
+        <div class="input-container">
+            <div class="first-equation">
+                <input type="number" name="a1" value="" class="field" id="a1" required>
+                X
+                <input type="number" name="b1" value="" class="field" id="b1">
+                Y
+                <input type="number" name="c1" value="" class="field" id="c1">
+                Z
+                =
+                <input type="number" name="result1" value="" class="field" id="result1">
+            </div>
+
+            <div class="second-equation">
+                <input type="number" name="a2" value="" class="field" id="a2">
+                X
+                <input type="number" name="b2" value="" class="field" id="b2">
+                Y
+                <input type="number" name="c2" value="" class="field" id="c2">
+                Z
+                =
+                <input type="number" name="result2" value="" class="field" id="result2">
+            </div>
+            <div class="third-equation">
+                <input type="number" name="a3" value="" class="field" id="a3">
+                X
+                <input type="number" name="b3" value="" class="field" id="b3">
+                Y
+                <input type="number" name="c3" value="" class="field" id="c3">
+                Z
+                =
+                <input type="number" name="result3" value="" class="field" id="result3">
+            </div>
+        </div>
+        
+
+        <div class="btn-container">
+            <button type="button" name="button" class="btn calculate-btn" onclick= "result()">Calcular</button>
+            <button type="button" name="button" class="btn clear-btn" onclick="clearData()">Limpar</button>
+        </div>
+        
+        
+        
+        <div class="output-container">
+            <h1>Incógnitas</h1>
+            <div class="incognitas">
+            <div class="output-box">
+                <div class="text">X = </div>
+                <div class="x-result" id="x-result"></div>
+            </div>
+
+            <div class="output-box">
+                <div class="text">Y = </div>
+                <div class="y-result" id="y-result"></div>
+            </div>
+            <div class="output-box">
+                <div class="text">Z = </div>
+                <div class="z-result" id="z-result"></div>
+            </div>
+        </div>
+
+        <h1>Determinantes</h1>
+        <div class="determinantes">
+            <div class="output-box">
+                <div class="text">DA = </div>
+                <div class="Det-A" id="Det-A"></div>
+            </div>
+
+            <div class="output-box">
+                <div class="text">DX = </div>
+                <div class="Det-X" id="Det-X"></div>
+            </div>
+
+            <div class="output-box">
+                <div class="text">DY = </div>
+                <div class="Det-Y" id="Det-Y"></div>
+            </div>
+
+            <div class="output-box">
+                <div class="text">DZ = </div>
+                <div class="Det-Z" id="Det-Z"></div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="solution-type" id="solution-type"></div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="Javascript\script3.js" charset="utf-8"></script>

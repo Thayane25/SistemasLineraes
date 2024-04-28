@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    color: #0F1021;
+}
+:root {
+    --background: #561C24;
+    --main-color: #E8D8C4;
+    --secondary-color: #6D2932;
+    --text:#561C24;
+  }
+
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background);
+}
+.main{
+    width: 800px;
+    height: 500px;
+    padding: 1rem;
+    border-radius: 1rem ;
+    border: 5px solid var(--secondary-color);
+    background: #ffffff;
+}
+
+.container{
+    margin-top: 50px;
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+#titulo{
+    margin-top: 10px;
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+
+.primeira, .segunda{
+    align-items: baseline;
+    height: 300px;
+    width: 350px;
+    background: var(--secondary-color);
+}
+img{
+    margin-top: 15px;
+    width: 90%;
+    height: 70%;
+}
+h1{
+    color: #ffffff;
+    font-size: 20px;
+}
+.btn{
+    margin-top: 10px;
+    width: 90%;
+    height: 50px;
+    background: var(--main-color);
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn:hover, .btn:focus {
+    background: #f6afaf;
+}
+
+@media screen and (max-width:700px) {
+    input{
+        height: 2rem;
+        width: 2.5rem;
+    }
+    
+}
