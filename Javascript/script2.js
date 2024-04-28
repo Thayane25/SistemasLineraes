@@ -10,7 +10,10 @@ function result() {
     var result2 = parseFloat(document.getElementById("result2").value);
     
     //se nada for inserido ou não for um número
-
+    if (isNaN(a1) || isNaN(b1) || isNaN(result1) || isNaN(a2) || isNaN(b2)  || isNaN(result2) && a1 == 0 || a2 == 0 || b1 == 0 || b2 == 0 ) {
+   alert("Por favor, preencha todos os campos corretamente!");
+   return;
+}
     // Calcula o determinante
     var detA = (a1 * b2) - (a2 * b1);
     

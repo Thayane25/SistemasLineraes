@@ -15,8 +15,9 @@ function result() {
     var result3 = parseFloat(document.getElementById("result3").value);
     
     //se nada for inserido ou não for um número
-    if (isNaN(a1) || isNaN(b1) || isNaN(c1) || isNaN(result1) || isNaN(a2) || isNaN(b2) || isNaN(c2) || isNaN(result2) || isNaN(a3) || isNaN(b3) || isNaN(c3)|| isNaN(result3)) {
-        alert("Por favor, preencha todos os campos!");
+    if (isNaN(a1) || isNaN(b1) || isNaN(c1) || isNaN(result1) || isNaN(a2) || isNaN(b2) || isNaN(c2) || isNaN(result2) || isNaN(a3) || isNaN(b3) || isNaN(c3)|| isNaN(result3)
+         && a1==0 && a2 == 0 && a3 == 0 || b1==0 && b2 == 0 && b3 == 0 || c1==0 && c2 == 0 && c3 == 0  ) {
+        alert("Por favor, preencha todos os campos corretamente!");
         return;
     }
     
@@ -72,7 +73,7 @@ function clearData() {
     document.getElementById("result1").value = "";
     document.getElementById("a2").value = "";
     document.getElementById("b2").value = "";
-    document.getElementById("b3").value = "";
+    document.getElementById("c2").value = "";
     document.getElementById("result2").value = "";
     document.getElementById("a3").value = "";
     document.getElementById("b3").value = "";
