@@ -16,7 +16,7 @@ function result() {
     
     //se nada for inserido ou não for um número
     if (isNaN(a1) || isNaN(b1) || isNaN(c1) || isNaN(result1) || isNaN(a2) || isNaN(b2) || isNaN(c2) || isNaN(result2) || isNaN(a3) || isNaN(b3) || isNaN(c3)|| isNaN(result3)
-         && a1==0 && a2 == 0 && a3 == 0 || b1==0 && b2 == 0 && b3 == 0 || c1==0 && c2 == 0 && c3 == 0  ) {
+         && a1==0 || a2 == 0 || a3 == 0 || b1==0 || b2 == 0 || b3 == 0 || c1==0 || c2 == 0 || c3 == 0  ) {
         alert("Por favor, preencha todos os campos corretamente!");
         return;
     }
