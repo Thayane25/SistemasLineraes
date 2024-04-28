@@ -1,4 +1,4 @@
-<h1 align="center"> Dev Links</h1>
+<h1 align="center"> Álgebra linear</h1>
 
 
 
@@ -20,7 +20,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML, CSS e JavaScript
 
-- Você pode visualizar o projeto --> [aqui](https://thayane25.github.io/projeto-rocketseat/) 
+- Você pode visualizar o projeto --> [aqui](https://thayane25.github.io/SistemasLineraes/) 
 
 
 ---

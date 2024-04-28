@@ -11,8 +11,14 @@ function result() {
     
     var a3 = parseFloat(document.getElementById("a3").value);
     var b3 = parseFloat(document.getElementById("b3").value);
-    var c3 = parseFloat(document.getElementById("c3").value);
+    var c3 = parseFloat(document.getElementById("c3").value); 
     var result3 = parseFloat(document.getElementById("result3").value);
+    
+    //se nada for inserido ou não for um número
+    if (isNaN(a1) || isNaN(b1) || isNaN(c1) || isNaN(result1) || isNaN(a2) || isNaN(b2) || isNaN(c2) || isNaN(result2) || isNaN(a3) || isNaN(b3) || isNaN(c3)|| isNaN(result3)) {
+        alert("Por favor, preencha todos os campos!");
+        return;
+    }
     
     // Calculo dos determinantes
     var detA = a1 * (b2 * c3 - b3 * c2) - b1 * (a2 * c3 - a3 * c2) + c1 * (a2 * b3 - a3 * b2);
@@ -21,9 +27,17 @@ function result() {
     var detZ = a1 * (b2 * result3 - b3 * result2) - b1 * (a2 * result3 - a3 * result2) + result1 * (a2 * b3 - a3 * b2);
     
     // Calculo das Incóginitas de X, Y e Z
-    var x = detX / detA;
-    var y = detY / detA;
-    var z = detZ / detA;
+    var x, y, z;
+    if (detA != 0) {
+        x = detX / detA;
+        y = detY / detA;
+        z = detZ / detA;
+    } else {
+        x = "Indeterminado";
+        y = "Indeterminado";
+        z = "Indeterminado";
+    }
+ 
     
     // Exibe os resultados na página
     document.getElementById("x-result").innerText = x;
@@ -35,17 +49,15 @@ function result() {
     document.getElementById("Det-Z").innerText = detZ;
 
 
-    if (isNaN(a1) || isNaN(b1) || isNaN(c1) || isNaN(result1) || isNaN(a2) || isNaN(b2) || isNaN(c2) || isNaN(result2) || isNaN(a3) || isNaN(b3) || isNaN(c3)|| isNaN(result3)) {
-        alert("Por favor, preencha todos os campos!");
-        return;
-    }
-
     // Determina a classificação do sistema linear
     var classification;
     if (detA !== 0) {
         classification = "Sistema Determinado";
-    } else {
-        classification = "Sistema Indeterminado ou Impossível";
+    } else if(detA == 0 && detX == 0 || detY == 0) {
+        classification= "Sistema Possível Indeterminado";
+    }
+    else {
+        classification = "Sistema Impossível";
     }
 
     // Exibe a classificação na página

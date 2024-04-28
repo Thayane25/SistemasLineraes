@@ -1,17 +1,16 @@
+//Essa função irá fazer os cálculos dos números inseridos pelos usuários
 function result() {
+    //primeira equação first-equation
     var a1 = parseFloat(document.getElementById("a1").value);
     var b1 = parseFloat(document.getElementById("b1").value);
     var result1 = parseFloat(document.getElementById("result1").value);
-    
+    //segunda equação second-equation
     var a2 = parseFloat(document.getElementById("a2").value);
     var b2 = parseFloat(document.getElementById("b2").value);
     var result2 = parseFloat(document.getElementById("result2").value);
     
-    
-    if (isNaN(a1) || isNaN(b1) || isNaN(result1) || isNaN(a2) || isNaN(b2) || isNaN(result2)) {
-        alert("Por favor, preencha todos os campos!");
-        return;
-    }
+    //se nada for inserido ou não for um número
+
     // Calcula o determinante
     var detA = (a1 * b2) - (a2 * b1);
     
