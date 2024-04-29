@@ -47,6 +47,7 @@ body{
 #titulo{
     margin-top: 10px;
     font-size: 30px;
+    text-align: center;
     color: var(--secondary-color);
 }
 
@@ -62,8 +63,10 @@ img{
     height: 70%;
 }
 h1{
-    color: #ffffff;
-    font-size: 20px;
+    margin-top: 15px;
+    color: var(--background);
+    text-align: left;
+    font-size: 15px;
 }
 .btn{
     margin-top: 10px;
@@ -76,7 +79,7 @@ h1{
     cursor: pointer;
 }
 .btn:hover, .btn:focus {
-    background:#a35e67f3;
+    background:#6d2932f3;
     color: #ffffff;
 }
 

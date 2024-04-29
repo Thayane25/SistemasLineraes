@@ -5,10 +5,6 @@
 
 <br>
 
-<p align="center">
-  <img alt="Classificador de sistemas lineares" src="img\Capa.png" width="100%">
-</p>
-
 
 
 ##  Projeto
