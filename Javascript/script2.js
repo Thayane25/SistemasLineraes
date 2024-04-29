@@ -1,9 +1,11 @@
 //Essa função irá fazer os cálculos dos números inseridos pelos usuários
-function result() {
+    function result() {
+
     //primeira equação first-equation
     var a1 = parseFloat(document.getElementById("a1").value);
     var b1 = parseFloat(document.getElementById("b1").value);
     var result1 = parseFloat(document.getElementById("result1").value);
+    
     //segunda equação second-equation
     var a2 = parseFloat(document.getElementById("a2").value);
     var b2 = parseFloat(document.getElementById("b2").value);

@@ -1,22 +1,26 @@
 function result() {
+    //1°Declaração de variáveis e referênciando a entrada de input HTML
+    //Primeira equação
     var a1 = parseFloat(document.getElementById("a1").value);
     var b1 = parseFloat(document.getElementById("b1").value);
     var c1 = parseFloat(document.getElementById("c1").value);
     var result1 = parseFloat(document.getElementById("result1").value);
    
-    
+    //Segunda equação    
     var a2 = parseFloat(document.getElementById("a2").value);
     var b2 = parseFloat(document.getElementById("b2").value);
     var c2 = parseFloat(document.getElementById("c2").value);
     var result2 = parseFloat(document.getElementById("result2").value);
     
+    //Terceira equação
     var a3 = parseFloat(document.getElementById("a3").value);
     var b3 = parseFloat(document.getElementById("b3").value);
     var c3 = parseFloat(document.getElementById("c3").value); 
     var result3 = parseFloat(document.getElementById("result3").value);
     
-    //se nada for inserido ou não for um número
-    if (isNaN(a1) || isNaN(b1) || isNaN(c1) || isNaN(result1) || isNaN(a2) || isNaN(b2) || isNaN(c2) || isNaN(result2) || isNaN(a3) || isNaN(b3) || isNaN(c3)|| isNaN(result3)) {
+    //Se o usuário não inserir nada ou inserir algo que não seja um número ele recebe um alerta
+    if (isNaN(a1) || isNaN(b1) || isNaN(c1) || isNaN(result1) || isNaN(a2) || isNaN(b2) || isNaN(c2) || isNaN(result2) || isNaN(a3) || isNaN(b3) || isNaN(c3)|| isNaN(result3)) 
+    {
         alert("Por favor, preencha todos os campos corretamente!");
         return;
     }
@@ -40,7 +44,7 @@ function result() {
     }
  
     
-    // Exibe os resultados na página
+    // Exibe os resultados na página nos lugares determinados
     document.getElementById("x-result").innerText = x;
     document.getElementById("y-result").innerText = y;
     document.getElementById("z-result").innerText = z;
@@ -50,7 +54,7 @@ function result() {
     document.getElementById("Det-Z").innerText = detZ;
 
 
-    // Determina a classificação do sistema linear
+    // Determina a classificação do sistema linear inserido
     var classification;
     if (detA !== 0) {
         classification = "Sistema Determinado";
@@ -66,7 +70,7 @@ function result() {
 }
   
 function clearData() {
-    // Limpa os campos de entrada e os resultados exibidos
+    // Limpa os campos de entrada
     document.getElementById("a1").value = "";
     document.getElementById("b1").value = "";
     document.getElementById("c1").value = "";
@@ -79,7 +83,7 @@ function clearData() {
     document.getElementById("b3").value = "";
     document.getElementById("c3").value = "";
     document.getElementById("result3").value = "";
-    
+    //Limpa os resultados
     document.getElementById("x-result").innerText = "";
     document.getElementById("y-result").innerText = "";
     document.getElementById("z-result").innerText = "";
