@@ -69,14 +69,15 @@ h1{
     margin-top: 10px;
     width: 90%;
     height: 50px;
-    background: var(--main-color);
+    background: #ffffff;
     color: var(--text);
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
     cursor: pointer;
 }
 .btn:hover, .btn:focus {
-    background: #f6afaf;
+    background:#a35e67f3;
+    color: #ffffff;
 }
 
 @media screen and (max-width:700px) {
